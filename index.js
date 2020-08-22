@@ -26,4 +26,7 @@
 // import './SetPrototypeOf/proxy4'
 
 // isExtensible
-import './IsExtensible/proxy'
+// import './IsExtensible/proxy'
+
+// preventExtensions
+import './PreventExtensions/proxy'
