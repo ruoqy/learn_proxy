@@ -1,5 +1,5 @@
-- 创建proxy对象时，handler必须为object，且不能为null
-- handler上没有getPrototypeOf时，访问的是Object.getPrototypeOf(target)
-- handler.getPrototypeOf返回非object（包含null）时，抛出typeError
-- target不可扩展的时候，getPrototypeOf需要返回target实际的prototype，否则抛出typeError
-- 拦截Reflect.getPrototypeOf或者Object.getPrototypeOf
+- 创建`proxy`对象时，`handler`必须为`object`，且不能为`null`
+- `handler`上没有`getPrototypeOf`时，访问的是`target.[[getPrototypeOf]]()`
+- `handler.getPrototypeOf`返回非`object`（包含`null`）时，抛出`typeError`
+- `target`不可扩展的时候，`getPrototypeOf`需要返回`target.[[GetPrototypeOf]]()`，否则抛出`typeError`
+- 拦截`Reflect.getPrototypeOf`或者`Object.getPrototypeOf`

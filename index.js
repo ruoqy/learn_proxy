@@ -23,4 +23,7 @@
 // import './SetPrototypeOf/proxy3'
 
 // setPrototypeOf为其他值
-import './SetPrototypeOf/proxy4'
+// import './SetPrototypeOf/proxy4'
+
+// isExtensible
+import './IsExtensible/proxy'

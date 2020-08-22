@@ -1,6 +1,6 @@
-- 创建proxy对象时，handler必须为object，且不能为null
-- handler上没有setPrototypeOf时，访问的是Object.setPrototypeOf(target, proto)
-- setPrototypeOf提供的proto必须为Object（包含null）
-- target不可扩展的时候，setPrototypeOf只能设为target实际的prototype，否则不会执行setPrototypeOf拦截
-- 返回值boolean,改返回值不能代表实际执行是否成功
-- 拦截Reflect.setPrototypeOf和Object.setPrototypeOf和Object, 而且使用Object的方式返回false的情况可能存在异常，推荐使用Refelct的方式
+- 创建`proxy`对象时，`handler`必须为`object`，且不能为`null`
+- `handler`上没有`setPrototypeOf`时，访问的是`target.[[SetPrototypeOf]](V)`
+- `setPrototypeOf`提供的`proto`必须为`Object`（包含`null`）
+- `target`不可扩展的时候，`setPrototypeOf`只能设为`target`实际的`prototype`，否则不会执行`setPrototypeOf`拦截
+- 返回值`boolean`,改返回值不能代表实际执行是否成功
+- 拦截`Reflect.setPrototypeOf`和`Object.setPrototypeOf`, 而且使用`Object`的方式返回`false`的情况可能存在异常，推荐使用`Refelct`的方式
