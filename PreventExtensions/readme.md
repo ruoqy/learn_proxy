@@ -1,0 +1,5 @@
+- 创建`proxy`对象时，`handler`必须为`object`，且不能为`null`
+- `handler`上没有`PreventExtensions`时，访问的是`target.[[PreventExtensions]]()`
+- `handler.PreventExtensions`的返回必须`target.[[IsExtensible]]()`一致(真假值一致就行)，否则抛出`TypeError`
+- 返回值为boolean
+- 拦截`Object.PreventExtensions(proxy)`或者`Reflect.PreventExtensions(proxy)`
