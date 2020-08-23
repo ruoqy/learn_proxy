@@ -6,7 +6,7 @@ b.x = 12;
 
 const proxy = new Proxy(b, {
   get(target, prop, receiver) {
-    console.log("--- handler.get ---", receiver, prop, typeof prop);
+    console.log("--- handler.et ---", receiver, prop, typeof prop);
 
     return Reflect.get(target, prop);
   },

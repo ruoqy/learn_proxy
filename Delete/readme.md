@@ -1,0 +1,6 @@
+- 创建`proxy`对象时，`handler`必须为`object`，且不能为`null`
+- `handler`上没有`getOwnPropertyDescriptor`时，访问的是`target.[[Delete]](P)`
+- `prop`不是为`String`或`Symbol`时，`prop`被转换为`string`
+- 当`target[prop]`不存在时，返回true，不管`target`是否可扩展
+- 当`target[prop]`的`{configurable: false}`， delete返回false
+- 拦截`delete target[prop]`操作

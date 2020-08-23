@@ -79,4 +79,8 @@
 
 // set
 // import './Set/proxy1'
-import './Set/proxy2'
+// import './Set/proxy2'
+
+// delete
+// import './Delete/proxy1'
+import './Delete/proxy2'
