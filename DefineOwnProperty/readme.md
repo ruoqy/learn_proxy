@@ -1,0 +1,5 @@
+- 创建`proxy`对象时，`handler`必须为`object`，且不能为`null`
+- `handler`上没有`getOwnPropertyDescriptor`时，访问的是`target.[[DefineOwnProperty]](P, Desc)`
+- `prop`不是为`String`或`Symbol`时，`prop`被转换为`string`，结果为`undefined`
+- `desc`必须为`object`， 且不能为`null`， 否则抛出TypeError
+- `handler.defineProperty`作用于`isExtensible = false`的`target`上，设置不存在的`prop`时，抛出`TypeError`
