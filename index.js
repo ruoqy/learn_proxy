@@ -53,4 +53,13 @@
 // import './GetOwnProperty/proxy7'
 
 // 修改了属性的数据属性描述符
-import './GetOwnProperty/proxy8'
+// import './GetOwnProperty/proxy8'
+
+// defineProperty
+// import './DefineOwnProperty/proxy1'
+
+// 不可扩展对象
+// import './DefineOwnProperty/proxy2'
+
+// 属性描述符configurable从true改为false
+import './DefineOwnProperty/proxy3'
