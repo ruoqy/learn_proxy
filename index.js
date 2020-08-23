@@ -71,4 +71,8 @@
 // import './HasProperty/proxy2'
 
 // has return false且不可扩展
-import './HasProperty/proxy3'
+// import './HasProperty/proxy3'
+
+// get
+// import './Get/proxy1'
+import './Get/proxy2'
