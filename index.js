@@ -75,4 +75,8 @@
 
 // get
 // import './Get/proxy1'
-import './Get/proxy2'
+// import './Get/proxy2'
+
+// set
+// import './Set/proxy1'
+import './Set/proxy2'

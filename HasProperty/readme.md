@@ -1,6 +1,6 @@
 - 创建`proxy`对象时，`handler`必须为`object`，且不能为`null`
 - `handler`上没有`getOwnPropertyDescriptor`时，访问的是`target.[[HasProperty]](P)`
 - 返回值`boolean`
-- `prop`不是为`String`或`Symbol`时，`prop`被转换为`string`，结果为`undefined`
+- `prop`不是为`String`或`Symbol`时，`prop`被转换为`string`
 - `handler.has`能够拦截`Reflect.has`和`in`操作，不能拦截`for...in...`操作 
 - `handler.has`返回false， 当`target[prop]`的`configurable=false`时，抛出TypeError；当`target`的`isExtensible=false`时，访问不存在的属性ok，访问已有属性，抛出TypeError

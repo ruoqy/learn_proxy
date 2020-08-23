@@ -1,0 +1,8 @@
+- 创建`proxy`对象时，`handler`必须为`object`，且不能为`null`
+- `handler`上没有`getOwnPropertyDescriptor`时，访问的是`target.[[Set]](P, V, Receiver)`
+- `receiver`指向当前的`proxy`对象
+- `prop`不是为`String`或`Symbol`时，`prop`被转换为`string`
+- 返回值`boolean`
+- 当`target[prop]`的`{configurable: false, writable: false}`时，`value`与`target[prop]`的value不同时，`handler.set`返回false
+- 当`target[prop]`的`{configurable: false}`且为访问器属性描述符时，`target[prop]`不存在set时，`handler.set`返回false
+- 拦截`target[prop]=value`或`target.prop=value`操作

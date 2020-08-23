@@ -1,6 +1,7 @@
 - 创建`proxy`对象时，`handler`必须为`object`，且不能为`null`
 - `handler`上没有`getOwnPropertyDescriptor`时，访问的是`target.[[Get]](P, Receiver)`
 - `receiver`指向当前的`proxy`对象
-- `prop`不是为`String`或`Symbol`时，`prop`被转换为`string`，结果为`undefined`
+- `prop`不是为`String`或`Symbol`时，`prop`被转换为`string`
 - 当`target[prop]`的`{configurable: false, writable: false}`时，`handler.get`返回值与`target[prop]`的value不同时，抛出TypeError
 - 当`target[prop]`的`{configurable: false}`且为访问器属性描述符时，`handler.get`返回值不是`undefined`且`target[prop]`不存在get时，抛出TypeError
+- 拦截`target[prop]`或者`target.prop`操作

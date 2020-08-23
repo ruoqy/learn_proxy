@@ -39,13 +39,16 @@ console.log("get 不存在的属性  ", result);
 // console.log("get 不可写属性单值相同   ", result);
 
 // 访问器属性，没有定义get
-Reflect.defineProperty(proxy, "boo", {
-  set(val) {
-    console.log("boo  ", val);
-  },
-  configurable: false,
-  enumerable: false,
-});
+// Reflect.defineProperty(proxy, "boo", {
+//   set(val) {
+//     console.log("boo  ", val);
+//   },
+//   configurable: false,
+//   enumerable: false,
+// });
 
-result = Reflect.get(proxy, 'boo')
-console.log("get 访问器属性，没有定义get   ", result);
+// result = Reflect.get(proxy, "boo");
+// console.log("get 访问器属性，没有定义get   ", result);
+
+console.log(proxy.x);
+console.log(proxy["x"]);
