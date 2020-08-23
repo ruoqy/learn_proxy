@@ -62,4 +62,13 @@
 // import './DefineOwnProperty/proxy2'
 
 // 属性描述符configurable从true改为false
-import './DefineOwnProperty/proxy3'
+// import './DefineOwnProperty/proxy3'
+
+// has
+// import './HasProperty/proxy1'
+
+// has return false的情况
+// import './HasProperty/proxy2'
+
+// has return false且不可扩展
+import './HasProperty/proxy3'
