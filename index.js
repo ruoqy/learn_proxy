@@ -87,4 +87,7 @@
 
 // ownKeys
 // import './OwnPropertyKeys/proxy1'
-import './OwnPropertyKeys/proxy2'
+// import './OwnPropertyKeys/proxy2'
+
+// apply
+import './Call/proxy1'

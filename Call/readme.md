@@ -1,0 +1,3 @@
+- 创建`proxy`对象时，`handler`必须为`object`，且不能为`null`
+- `handler`上没有`getOwnPropertyDescriptor`时，访问的是`Call(target, thisArgument, argumentsList)`
+- 拦截`call`、`apply`以及函数调用操作
