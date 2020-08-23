@@ -90,4 +90,7 @@
 // import './OwnPropertyKeys/proxy2'
 
 // apply
-import './Call/proxy1'
+// import './Call/proxy1'
+
+// constructor
+import './Construct/proxy'

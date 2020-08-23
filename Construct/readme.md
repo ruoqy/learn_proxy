@@ -1,0 +1,5 @@
+- 创建`proxy`对象时，`handler`必须为`object`，且不能为`null`
+- `handler`上没有`getOwnPropertyDescriptor`时，访问的是`Construct(target, argumentsList, newTarget)`
+- 拦截`new`操作
+- 返回值必须为一个`Object`， 否则抛出 TypeError
+- `target`必须有创建对象的能力（即`target[[Construct]]`存在）
