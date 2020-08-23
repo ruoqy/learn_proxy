@@ -1,0 +1,7 @@
+- 创建`proxy`对象时，`handler`必须为`object`，且不能为`null`
+- `handler`上没有`getOwnPropertyDescriptor`时，访问的是`target.[[OwnPropertyKeys]]()`
+- 返回值为一个`array`，只能含有`string`和`symbol`类型
+- 返回的数组中不能有`duplicate`的元素
+- 当`target`的`isExtensible = false`时， 返回的 list 中不能缺少任何一个 prop，也不能有多余的 prop
+- 当`target`的`isExtensible = true`时， 返回的 list 中不能缺少任何一个不可配置的 prop
+- 拦截`Reflect.ownKeys`、`Object.keys`、`Object.getOwnPropertyNames` 、`Object.getOwnPropertySymbols`、`for...in`操作

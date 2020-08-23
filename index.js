@@ -83,4 +83,8 @@
 
 // delete
 // import './Delete/proxy1'
-import './Delete/proxy2'
+// import './Delete/proxy2'
+
+// ownKeys
+// import './OwnPropertyKeys/proxy1'
+import './OwnPropertyKeys/proxy2'
