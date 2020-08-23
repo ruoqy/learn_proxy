@@ -29,4 +29,28 @@
 // import './IsExtensible/proxy'
 
 // preventExtensions
-import './PreventExtensions/proxy'
+// import './PreventExtensions/proxy'
+
+// getOwnPropertyDescriptor 入参prop非string非symbol
+// import './GetOwnProperty/proxy1'
+
+//  getOwnPropertyDescriptor返回结果不是object和undefined
+// import './GetOwnProperty/proxy2'
+
+// getOwnPropertyDescriptor 入参prop是原型链上的属性
+// import './GetOwnProperty/proxy3'
+
+// getOwnPropertyDescriptor 返回undefined，访问prop的configurable为false的情况
+// import './GetOwnProperty/proxy4'
+
+// getOwnPropertyDescriptor 返回undefined，target的isExtensible为false的情况
+// import './GetOwnProperty/proxy5'
+
+// getOwnPropertyDescriptor 返回undefined，prop不存在
+// import './GetOwnProperty/proxy6'
+
+// 不可扩展对象上，增加新属性的情况
+// import './GetOwnProperty/proxy7'
+
+// 修改了属性的数据属性描述符
+import './GetOwnProperty/proxy8'

@@ -6,7 +6,7 @@ b.x = 12;
 
 let proxy = new Proxy(b, {
   setPrototypeOf(target, proto) {
-    console.log('--- 执行setPrototypeOf ---');
+    console.log(" --- handler.setPrototypeOf ---");
     return Reflect.setPrototypeOf(target, proto);
   },
 });

@@ -6,6 +6,7 @@ b.x = 12;
 
 const proxy = new Proxy(b, {
   getPrototypeOf(target) {
+    console.log(" --- handler.getPrototypeOf ---");
     return Reflect.getPrototypeOf(target);
   },
 });

@@ -6,7 +6,8 @@ b.x = 12;
 
 const proxy = new Proxy(b, {
     isExtensible(target) {
-        Reflect.isExtensible(target)
+        console.log('--- handler.isExtensible ---');
+        // return Reflect.isExtensible(target)
         return true
         // return false
         // return 0
